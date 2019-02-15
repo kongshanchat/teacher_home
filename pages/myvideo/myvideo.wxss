@@ -1,0 +1,104 @@
+/* pages/myvideo/myvideo.wxss */
+.myvideo{
+  padding: 32rpx;
+}
+.upload{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180rpx;
+  width: 320rpx;
+  border: 2rpx dashed #C7C7C7;
+  box-sizing: border-box;
+  background: #fff;
+}
+.video_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.video_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180rpx;
+  width: 320rpx;
+  background:rgba(155,155,157,.6);
+  margin-bottom: 32rpx;
+  position: relative
+}
+.upload image{
+  width: 64rpx;
+  height: 64rpx;
+  margin-bottom: 16rpx;
+}
+
+.upload text{
+  height:24rpx;
+font-size:24rpx;
+font-family:PingFangSC-Regular;
+font-weight:400;
+color:rgba(155,155,157,1);
+line-height:24rpx;
+}
+
+.video_tle{
+  height:28px;
+font-size:20px;
+font-family:PingFangSC-Medium;
+font-weight:500;
+color:rgba(53,53,54,1);
+line-height:28px;
+margin-bottom: 28rpx;
+}
+.person_introduce:nth-of-type(1){
+  margin-bottom: 112rpx;
+}
+
+.playBtn{
+  position: absolute;
+  height: 80rpx;
+  width: 80rpx;
+  top: 50rpx;
+  left: 120rpx;
+}
+
+.delBtn{
+  position: absolute;
+  width: 48rpx;
+  height: 48rpx;
+  right: 8rpx;
+  top: 8rpx;
+  z-index: 999999
+}
+
+.video_item video{
+  height: 180rpx;
+  width: 320rpx;
+}
+.submit{
+  position: fixed;
+  font-size: 28rpx;
+  width: 750rpx;left: 0;
+  bottom: 0;
+  border-radius: 0;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.video_status{
+  width: 160rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 8rpx;
+  color: #fff;
+  border-radius:20rpx;
+  background: rgba(155,155,157,.6)
+}

@@ -1,0 +1,140 @@
+.login_bg{
+  width: 100%;
+  height: 380rpx;
+  margin-top: 90rpx;
+}
+.login_bg>image{
+  width: 100%;
+  height: 100%;
+}
+.login_look{
+  margin-top: 60rpx;
+  text-align: center;
+}
+.login_look>text{
+  font-family:PingFangSC-Regular;
+}
+.login{
+  width:47.3%;
+  height: 110rpx;
+  margin:29rpx auto;
+  position: relative;
+}
+.login>image{
+  width: 100%;
+  height: 100%;
+}
+.login>button{
+  border: none;
+  position:absolute; 
+  color: #fff; 
+  top:0rpx; 
+  left:30%;
+}
+.dropback {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+.modal-dialog{
+  width: 100%;
+  z-index: 9999;
+  overflow: hidden;
+  position: fixed;
+  top: 15%;
+  z-index: 9999;
+}
+.modal-content{
+  width: 70%;
+  background: #fff;
+  border-radius: 36rpx;
+  height: 500rpx;
+  margin: 0 auto;
+}
+.modal-header{
+  width: 123rpx;
+  height: 112rpx;
+  margin: 0 auto;
+}
+.modal-header>image{
+  width: 100%;
+  height: 100%;
+}
+.modal-close{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top:91rpx;
+  right: 12.1%;
+}
+.modal-close>image{
+  width: 100%;
+  height: 100%;
+}
+.modal-title{
+  text-align: center;
+  padding-top: 40rpx;
+}
+.modal-input{
+  width: 70%;
+  margin: 50rpx auto 0 auto;
+}
+.modal-input-phone{
+  width: 100%;
+  margin-bottom: 35rpx;
+  border-bottom: 1.5px solid #EFEFF4;
+}
+.modal-input-phone>input, .modal-input-passward>input{
+  font-family:PingFangSC-Regular;
+  width:90%;
+  font-size: 30rpx;
+  margin-bottom: 5rpx;
+}
+ .modal-input-phone view{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top:256rpx;
+  left:70%;
+}
+.modal-input-passward{
+  border-bottom: 1.5px solid #EFEFF4;
+}
+.modal-input-passward view{
+  width:30rpx;
+  height: 16rpx;
+  position: absolute;
+  top:346rpx;
+  left:70%;
+}
+.modal-input-phone view image, .modal-input-passward view image{
+  width: 100%;
+  height: 100%;
+} 
+.phone-num, .passward{
+  font-size: 28rpx;
+}
+.errPhone{
+  font-size: 26rpx;
+  color: #FF604B;
+  margin-top: 10rpx;
+  height: 30rpx;
+}
+.modal-footer{
+  width: 70%;
+  height: 80rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  margin: 10rpx auto auto auto;
+}
+
+

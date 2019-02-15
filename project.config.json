@@ -1,0 +1,79 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.5.1",
+	"appid": "wx16cc0dfdcac0fc84",
+	"projectname": "coach_miniprogram",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "apply",
+					"pathName": "pages/apply/apply",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "klass",
+					"pathName": "pages/klass/klass",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "personal",
+					"pathName": "pages/personal/personal",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "resume",
+					"pathName": "pages/resume/resume",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "chour",
+					"pathName": "pages/chour/chour",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的视频",
+					"pathName": "pages/myvideo/myvideo"
+				}
+			]
+		}
+	}
+}

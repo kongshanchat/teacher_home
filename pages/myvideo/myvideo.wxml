@@ -1,0 +1,48 @@
+<!--pages/myvideo/myvideo.wxml-->
+<view class='myvideo'>
+  <view class='person_introduce'>
+    <view class='video_tle'>个人介绍</view>
+    <view class='video_box'>
+      <view class='upload' bindtap='upIntroduce' wx:if="{{intro==''}}">
+        <image src='../../images/introduce.png'></image>
+        <text>上传介绍</text>
+      </view>
+
+      <view class='video_item' wx:if="{{intro!=''}}">
+        <video src='{{intro}}' bindfullscreenchange="fullscreen" show-center-play-btn="{{centerBtn}}"></video>
+        <cover-image class='delBtn' src='../../images/delate.png' wx:if="{{showDel==true}}" bindtap='delates' data-index="introduce"></cover-image>
+        <block wx:if="{{showTip==true}}"><cover-view class='video_status' wx:if="{{intro_text}}">{{intro_text}}</cover-view></block>
+      </view>
+    </view>
+  </view>
+
+  <view class='person_introduce'>
+    <view class='video_tle'>作品展示</view>
+    <view class='video_box'>
+      <view class='upload' wx:if="{{vlist.length!=4}}" bindtap='upmasterPiece'>
+        <image src='../../images/masterpice.png'></image>
+        <text>上传作品</text>
+      </view>
+
+      <view class='video_item' wx:for="{{vlist}}" wx:key="{{index}}">
+        <video objectFit='fill' src='{{item.url}}' bindfullscreenchange="fullscreen" show-center-play-btn="{{centerBtn}}"></video>
+        <!-- <block wx:for="{{status}}" wx:for-item="st" wx:for-index="st_index" wx:key="{{st_index}}"> -->
+        <block wx:if="{{showTip==true}}">
+        <cover-view wx:if="{{item.status}}" class='video_status'>{{item.status}}</cover-view>
+        </block>
+        <cover-image class='delBtn' src='../../images/delate.png' wx:if="{{showDel==true}}" bindtap='delates' data-id="{{st.id}}" data-index="{{index}}"></cover-image>
+        <!-- </block> -->
+        <!-- <block wx:if>
+        <cover-view class='video_status'>待上传</cover-view>
+        </block> -->
+      </view>
+
+    </view>
+  </view>
+  <block wx:if="{{vlist.length!=0}}">
+  <view wx:if="{{edits==true}}">
+    <button wx:if="{{vlist.length!=0}}" class='submit' type='warn' bindtap='edit'>编辑</button>
+  </view>
+  <button wx:if="{{save==true && vlist.length!=0}}" class='submit' type='warn' loading='{{loading}}' bindtap='save'>保存</button>
+  </block>
+</view>

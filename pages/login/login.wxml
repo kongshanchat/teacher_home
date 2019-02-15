@@ -1,0 +1,51 @@
+<view>
+  <view class='login_bg'>
+    <image src='../../images/deer.png'></image>
+  </view>
+  <view class='login_look'>
+    <text>登录后查看时间表，课程表。</text>
+  </view>
+  <view class='login'>
+    <image src='../../images/signin.png'></image>
+    <button plain='false' bindtap="showDialogBtn">登录</button>
+  </view>
+  <view class="dropback" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+    <view>
+      <view class='modal-header'>
+        <image src="../../images/phone_1.png"></image>
+      </view>
+      <view class='modal-close' bindtap="onCancel" data-status="cancel">
+        <image src='../../images/close.png'></image>
+      </view>
+      <view class="modal-content">
+        <view class='modal-title'>登录</view>
+        <view class="modal-input">
+          <view class='modal-input-phone'>
+            <input placeholder-class="phone-num" type="number" maxlength="11" bindtap="inputPhone" bindinput ="userNameInput" placeholder="请输入手机号" focus="{{phone_focus}}" name="userName" value="{{userPhone}}"></input> 
+            <view wx:if="{{showEmpty}}" bindtap="emptyValue">
+                <image src='../../images/close-signin.png'/> 
+            </view>
+          </view>
+          <view class='modal-input-passward'>
+            <input placeholder-class="passward"  maxlength="16" bindtap="inputPwd" bindinput ="passWdInput" placeholder="请输入密码" focus="{{passward_focus}}" password='{{password}}'></input>
+            <view wx:if="{{showPassward}}">
+              <image wx:if="{{password==true}}" src='../../images/eyeclose.png' bindtap="eyeClose"/>
+              <image wx:elif="{{password==false}}" src='../../images/eye.png' bindtap="eyeOpen" style='width:30rpx;height:20rpx'/>
+            </view>
+          </view>
+          <view class='errPhone'>
+            <text hidden="{{reply}}">手机号或密码错误</text>
+          </view>
+        </view>
+        <view class="modal-footer" wx:if='{{next==true}}' data-status="confirm" style='background:#E0E0E0'>下一步
+        </view>
+        <view class="modal-footer" wx:if='{{next==false}}' bindtap="loginBtnClick" data-status="confirm" style='background:#FF604B'>下一步
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+

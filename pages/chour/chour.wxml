@@ -1,0 +1,32 @@
+<view class='chour-fixed'>
+  <view class='chour'>
+    <view class='chour-outside'>
+      <text class='chour-bg1'></text>
+      <text>已开放时间</text>
+    </view>
+    <view class='chour-nooutside'>
+      <text class='chour-bg2'></text>
+      <text>未开放时间</text>
+    </view>
+  </view>
+  <view class='weekday'>
+    <view wx:for="{{weekday}}" wx:for-item="day" wx:key="idx">{{day.day}}</view>
+    <!-- / -->
+  </view>
+</view>
+<view class='half'>
+  <view class='week'>
+  <view wx:for="{{weeklist}}" wx:for-item="list" wx:key="idx" class='week-time'>{{list.time}}
+</view>
+</view>
+<view class='week-timetable'>
+  <view wx:for="{{chours}}" wx:for-item="timeblock" wx:key="idx" class='timeblock'>
+    <view wx:for="{{timeblock}}" wx:for-item="timetable" wx:key="idx">
+      <view wx:if="{{timetable == 1}}"><image class='right'src='../../images/right.png'></image> 
+      </view>
+      <view wx:if="{{timetable == 0}}"><image class='none' src='../../images/none.png'></image>
+      </view> 
+    </view>  
+  </view>
+</view>
+</view>

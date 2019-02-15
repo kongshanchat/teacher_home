@@ -1,0 +1,279 @@
+page{
+  height: 100%；
+}
+.join{
+  width: 601rpx;
+  height: 99rpx;
+  margin: 0 auto;
+}
+.join>image, .coach_apply>image{
+  width: 100%;
+  height: 100%;
+}
+.form_div{
+  margin: -50rpx auto 0 auto;
+}
+.formDiv{
+  margin: 0 auto;
+  /* background: #fff;  */
+  border: 1px solid #C4C4C4;  
+  border-bottom: none;
+  padding-top: 50rpx;
+}
+.formDiv>view{
+  border-radius: 15rpx;
+}
+form{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20rpx;
+}
+.interview-option, .time{
+  font-size: 28rpx;
+  color: #3b3635; 
+}
+.select_time{
+  width: 143%;
+  height: 70rpx;
+  background:#ffedea;
+  border-radius:20rpx;
+}
+.age_on, .interview_on{
+  line-height: 80rpx;
+  padding-left: 5%; 
+  width: 95%;
+}
+.birth-date{
+  width: 100%;
+}
+.interview_time-selection{
+  margin-top: 20rpx;
+}
+.picker_time{
+  margin-right: 250rpx;
+}
+.name, .sex, .school, .xueli, .major, .teach_years, .good_at, .mobile, .learn_piano_years{
+  /* height: 80rpx; */
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+.section{
+  display: flex;
+  align-self: center;
+  justify-content: start;
+}
+.pickerleft{
+  margin-left: 6.8%;
+}
+.name-option>text, .sex-option>text, .teach_years-option>text, .good_at-option>text, .mobile-option>text, .code-option>text{
+  font-size: 30rpx;
+  color: #3b3635;
+  line-height: 80rpx;
+}
+.school-option>text, .major-option>text, .age-option>text{
+  font-size: 30rpx;
+  color:#3b3635;
+  line-height: 40rpx;
+}
+.school-option, .major-option, .age-option{
+  display: flex;
+  flex-wrap: wrap;
+}
+.name-input, .school-input, .major-input, .mobile-input, .code-input, .select_age{
+  background: #ffedea;
+  border-radius: 20rpx;
+}
+.name-input>input, .school-input>input,.major-input>input, .mobile-input>input{
+  padding-left: 5%; 
+  font-size: 28rpx;
+}
+.code-input>input{
+  padding-left: 8%; 
+  font-size: 28rpx;
+}
+.name-input, .school-input, .major-input, .select_age{
+  width: 83.4%;
+}
+.mobile-input{
+  width: 83.1%;
+}
+.code-input{
+  width: 48%;
+}
+.name, .school, .sex, .xueli,.learn_piano_years, .teach_years, .good_at, .interview-option, .select_time, .section, .age, .mobile{
+  margin-top: 35rpx;
+  /* box-sizing: border-box;
+  padding: 18rpx 0; */
+}
+.major, .code{
+ margin-top: 40rpx;
+}
+.code, .select_time{
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  height: 80rpx;
+}
+.sex-option>text{
+  font-size: 30rpx;
+}
+.code>input{
+  width: 60%;
+}
+.get-code{
+  width: 33%;
+  /* height: 80rpx; */
+  background:rgb(253,118,43);
+  border-radius: 15rpx;
+}
+button{
+  padding:0;
+}
+.get-code>button{
+  width: 100%;
+  font-size: 25rpx;
+   background: rgb(253,118,43); 
+  color: #fff;
+  /* padding: 0 15rpx;  */
+  text-align: center;
+  line-height: 80rpx;
+}
+.submit{
+  width: 100%;
+  margin: 50rpx auto 10rpx auto;
+}
+.submit>button{
+  background:#FF604B;
+  color: #fff;
+  border-radius: 20rpx;
+  /* border: 1rpx solid #FF604B; */
+}
+.sex>radio-group{
+  margin-right: 271rpx;
+  line-height: 72rpx;
+}
+radio{
+  margin-right: 20rpx; 
+  transform:scale(0.75);
+  /* font-size: 30rpx;  */
+  color: #aba5a4;  
+}
+ .service_selection, .goodAt_selection{  
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: start; 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+} 
+.interview_time-selection{
+  display: flex;
+  align-items: center;
+  justify-content: start; 
+}
+.item>label, .item-goodat>label, .interview_time-item>label{
+  color:#aba5a4;
+  font-size: 30rpx;
+}
+.section label{
+  border: 1px solid #fe0002;
+  font-size: 30rpx;
+  color:#fe0002;
+  padding: 6px 15px; 
+  border-radius: 4px;   
+  display: block;  
+} 
+.interview_time{
+  width: 83.2%;
+  margin-left: 16.8%; 
+}
+checkbox-group, .teach_years>radio-group, .xueli>radio-group, .learn_piano_years>radio-group{
+  width: 83.2%;
+}
+.service_selection label{  
+  border:1px solid #aba5a4;
+  padding: 6px 10px;      
+  font-size: 14px;   
+  border-radius: 4px;  
+  text-align: center;
+  display: block;
+}    
+.goodAt_selection label{
+  border:1px solid #aba5a4;
+  padding: 6px 15px;     
+  font-size: 14px;  
+  border-radius: 4px;
+  display: block;
+}
+.xueli label, .learn_piano_years label{
+  padding: 6px 10px;   
+}
+.interview_time-selection label{
+  border:1px solid #aba5a4;
+  padding: 6px 15px;     
+  font-size: 14px;  
+  border-radius: 4px; 
+  display: block;
+}
+.service_selection .is_checked, .goodAt_selection .is_checked, .interview_time-selection .is_checked{  
+  border: 1px solid #fe0002;  
+  color: #fe0002;   
+}  
+.interview, .age{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.errCode{
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 5rpx;
+  font-size: 28rpx;
+  color: red;
+}
+button::after{
+  border: none;
+}
+.picker1{
+  margin-left: 5%;
+}
+.item, .goodAt_selection .item-goodat, .interview_time-item{
+  margin-right: 20rpx;
+}
+.teach_years .item:nth-of-type(3), .xueli .item:nth-of-type(4), .learn_piano_years .item:nth-of-type(4){
+  margin-top: 20rpx;
+}
+.good_at .item-goodat:nth-of-type(4){
+   margin-top: 20rpx;
+}
+.teach_years .item:nth-of-type(4), .teach_years .item:nth-of-type(5){
+   margin-top: 20rpx;
+}
+.name-input, .select_age, .major-input, .school-input, select_time, .mobile-input, .code-input{
+  height: 84rpx;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.name, .age, .school, .major, .interview, .mobile, .code{
+  /* height: 84rpx; */
+}
+.last{
+  width: 100%;
+  height: 3px;
+}
+.interview_on, .age_on, .ph{
+  color: #aba5a4;
+  font-size: 28rpx;
+}
+input{
+  font-size: 28rpx;
+}
+.footer{
+  margin-top: -8rpx;
+}
+input{
+  width: 94%;
+}

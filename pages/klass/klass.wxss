@@ -1,0 +1,213 @@
+.fixed-date{
+   position: fixed; 
+   left: 0;
+   right: 0;
+   top:0;
+   background: #fff;
+   height: 240rpx; 
+}
+.current-date{
+  width: 91%;
+  margin: 0 auto;
+  padding-top: 10rpx;
+}
+.month{
+  color: #FF604B;
+  font-size: 30rpx;
+}
+.year{
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  color: gray;
+}
+.klass-date{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20rpx;
+}
+.klass-day{
+  width:100%;
+  height: 56rpx;
+  margin: 20rpx auto auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.klass-count{
+  position: relative;
+  top:-42rpx;
+  left: 84rpx; 
+}
+.klasses{
+  width:100%;
+  margin-top: 300rpx;
+}
+.klass{
+  width:100%;
+  height: 300rpx; 
+  margin-top: 30rpx;
+}
+.klass_time{
+ margin-left: 7%;
+ padding-top: 40rpx;
+ color: #656565;
+ font-size: 28rpx;
+}
+.klass-dayLook{
+  width: 14.22%;
+  float: left;
+  text-align: center;
+}
+.active{
+  display: block; 
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 50%;
+  line-height: 45rpx;
+  text-align: center;
+  margin: 0 auto;
+  background: #FF604B;
+  color: #fff;
+}
+.active1{
+  display: block; 
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 50%;
+  line-height: 45rpx;
+  text-align: center;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+}
+#isChange{
+  display: block; 
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  line-height: 56rpx;
+  text-align: center;
+  margin: 0 auto;
+  background: #FF604B;
+  color: #fff;
+}
+/* .catalog_item{
+   display: block; 
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  line-height: 56rpx;
+  text-align: center;
+  margin: 0 auto;
+  background: #FF604B;
+  color: #fff;  
+} */
+.catalog_item>text{
+  color: #000;
+  position: relative;
+  top:-73rpx;
+  left:0;
+}
+.week{
+ font-size: 28rpx; 
+}
+.catalog_item, .count{
+  font-size: 28rpx;
+}
+.count{
+  width: 14%;
+  float: left;
+  color: #FF604B;
+}
+.klass_title{
+  margin-top: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.student_avatar{
+  width: 120rpx;
+  height: 120rpx;
+  margin-left: 5%;
+}
+.student_avatar>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.student_klass{
+  width: 72%;
+}
+.student_name{
+  margin-top: 15rpx;
+  font-size: 28rpx;
+}
+.klass_name{
+  font-size: 30rpx;
+  font-weight: 900;
+}
+.log-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 55rpx;  
+}
+.log-item {
+  margin: 10rpx;
+}
+.personal_header{
+  width: 100%;
+  height: 398rpx;
+  margin-top: 70rpx;
+}
+.person_avatar{
+  width: 190rpx;
+  height: 190rpx;
+  padding-top: 45rpx;
+  margin: 0 auto 39rpx auto;
+}
+.person_avatar>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.coach-name, .coach-mobile{
+  text-align: center;
+}
+.coach-name{
+  font-size: 30rpx;
+}
+.coach-mobile{
+  margin-top: 15rpx;
+  font-size: 26rpx;
+}
+.personal_bg{
+  width: 100%;
+  height: 550rpx;
+  margin-top: 28rpx;
+}
+.personal_bg>image{
+  width: 100%;
+  height: 100%;
+}
+.phone>button{
+  color: #FF604B;
+  border: none;
+  font-size: 30rpx;
+}
+.no-klass{
+  width: 35%;
+  height: 400rpx;
+  margin: 340rpx auto auto auto;
+}
+.no-klass>image{
+  width: 264rpx;
+  height: 375rpx;
+}
+.no-klass>view{
+  color: #656565;
+  font-size: 26rpx;
+  margin-top: 30rpx;
+  text-align: center;
+}

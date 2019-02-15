@@ -1,0 +1,115 @@
+.student_avatar{
+  width: 120rpx;
+  height: 120rpx;
+  margin-left: 5%;
+}
+.student_avatar>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.student_klass{
+  width: 72%;
+}
+.student_name{
+  margin-top: 15rpx;
+  font-size: 28rpx;
+}
+.klass_name{
+  font-size: 30rpx;
+  font-weight: 900;
+}
+.log-list {
+  display: flex;
+  flex-direction: column; 
+}
+.log-item {
+  margin: 10rpx;
+}
+.personal_header{
+  width: 100%;
+  height: 350rpx;
+}
+.person_avatar{
+  width: 150rpx;
+  height: 150rpx;
+  padding-top: 45rpx;
+  margin: 0 auto 39rpx auto;
+}
+.person_avatar>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.coach-name, .coach-mobile{
+  text-align: center;
+}
+.coach-name{
+  font-size: 27rpx;
+}
+.coach-mobile{
+  margin-top: 15rpx;
+  font-size: 25rpx;
+}
+.personal_bg{
+  width: 100%;
+  height: 550rpx;
+  margin-top: 28rpx;
+}
+.personal_bg>image{
+  width: 100%;
+  height: 100%;
+}
+.phone>button{
+  color: #FF604B;
+  border: none;
+  font-size: 24rpx;
+  height: 50rpx;
+}
+.timetable{
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20rpx auto;
+  height: 70rpx;
+  box-shadow: 0 0.2rem 0 rgba(222,222,222,.3);
+  background: #fff;
+}
+.timeImg{
+  width: 38rpx;
+  height: 38rpx;
+}
+.youImg {
+   width: 33rpx;
+  height: 33rpx;
+  margin-right: 3%;
+}
+.youImg>image{
+  width: 100%;
+  height: 100%;
+}
+.cander{
+  margin-left: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  height:38rpx;
+
+}
+.cander>label{
+  font-size: 30rpx;
+  color: #8a8a8a;
+  margin-left:20rpx;
+}
+.cander>image{
+  /* vertical-align: middle;
+  margin-top: -4rpx; */
+}
+.service{
+  text-align: center;
+  font-size: 23rpx;
+  color: #8a8a8a;
+  margin-bottom: 20rpx;
+}

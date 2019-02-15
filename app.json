@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/klass/klass",
+    "pages/personal/personal",
+    "pages/login/login",
+    "pages/resume/resume",
+    "pages/chour/chour",
+    "pages/apply/apply",
+    "pages/myvideo/myvideo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#FF604B",
+    "backgroundColor": "#fff",
+    "line-height": "20rpx",
+    "list": [
+      {
+        "selectedIconPath": "images/klass2.png",
+        "iconPath": "images/klass1.png",
+        "pagePath": "pages/klass/klass",
+        "text": "我的课程"
+      },
+      {
+        "selectedIconPath": "images/personal2.png",
+        "iconPath": "images/personal1.png",
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

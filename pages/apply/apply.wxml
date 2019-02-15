@@ -1,0 +1,142 @@
+<view class='coach_apply' id='AutoTableItem' style='width:100%; height:{{H}}'>
+  <image src='../../images/zhaomusun1.png'></image>
+</view>
+<view class='join'>
+<image src='../../images/zhaomusun3.png'></image>
+</view>
+<view class='form_div'>
+<view class='formDiv' style='width:{{form_width}}'>
+  <view>
+    <form bindsubmit="formSubmit">
+  <view class='name'>
+    <view class='name-option'><text>姓名</text></view>
+    <view class='name-input'><input placeholder-class="ph" name="name" placeholder='请输入真实姓名'></input></view>
+  </view>
+  <view class='sex'>
+    <view class='sex-option'><text>性别</text></view>
+    <radio-group name="sex">
+      <radio checked='true' value="1">男</radio>
+      <radio value="2">女</radio>
+    </radio-group>
+  </view>
+  <view class="section">
+    <view class='name-option'><text>籍贯</text></view>
+    <picker bindchange="bindPickerChange" value="{{array[native_place]}}" range="{{array}}" custom-item="{{customItem}}" name="native_place" class='pickerleft'>
+      <label class="picker">
+        {{array[native_place]}}
+      </label>
+      <!-- <label class="picker">
+        {{region[1]}}
+      </label> -->
+    </picker>
+  </view>
+  <view class='age'>
+    <view class='age-option'><text>年龄</text></view>
+    <view class='select_age'>
+      <picker mode="date" value="{{birth_date}}" name="birthday" end="" bindchange="bindAgeChange" class='birth-date'>
+        <view class='age_on'>{{birth_date}}</view>  
+      </picker>
+    </view>
+  </view>
+  <view class='school'>
+  <view class='school-option'><text>所在\n院校</text></view>
+  <view class='school-input'><input type='text' placeholder-class="ph" name="school" placeholder='请输入院校名称' ></input></view>
+  </view>
+  <view class='major'>
+    <view class='major-option'><text>所学\n专业</text></view>
+    <view class='major-input'><input type='text' placeholder-class="ph" name="major" placeholder='请输入专业名称'></input></view>  
+  </view>
+  <view class='xueli'>
+    <view class='teach_years-option'><text>学历</text></view>
+    <radio-group name="education" bindchange="xueLiChange">
+      <view class="service_selection">  
+        <block wx:for="{{xueli}}" wx:key="idx">  
+          <view class="item">  
+            <label class="radio {{item.checked?'is_checked':''}}">  
+              <radio value="{{item.value}}" checked="{{item.checked}}" hidden="false" />{{item.name}}  
+            </label>  
+          </view>  
+        </block>  
+      </view>
+    </radio-group>
+  </view>
+  <view class='learn_piano_years'>
+    <view class='teach_years-option'><text>琴龄</text></view>
+    <radio-group name="learn_piano_years" bindchange="goodAtChange">
+      <view class="service_selection">  
+        <block wx:for="{{learn_piano_years}}" wx:key="idx">  
+          <view class="item">  
+            <label class="radio {{item.checked?'is_checked':''}}">  
+              <radio value="{{item.value}}" checked="{{item.checked}}" hidden="false" />{{item.name}}  
+            </label>  
+          </view>  
+        </block>  
+      </view>
+    </radio-group>
+  </view>
+  <view class='teach_years'>
+    <view class='teach_years-option'><text>教龄</text></view>
+    <radio-group name="teach_years" bindchange="teachYearsChange">
+      <view class="service_selection">  
+        <block wx:for="{{teach_years}}" wx:key="idx">  
+          <view class="item">  
+            <label class="radio {{item.checked?'is_checked':''}}">  
+              <radio value="{{item.value}}" checked="{{item.checked}}" hidden="false" />{{item.name}}  
+            </label>  
+          </view>  
+        </block>  
+      </view>
+    </radio-group>
+  </view>
+  <view class='good_at'>
+    <view class='good_at-option'><text>擅长</text></view>
+    <checkbox-group name="good_at" bindchange="serviceValChange">
+      <view class="goodAt_selection">  
+        <block wx:for="{{good_at}}" wx:key="idx">  
+          <view class="item-goodat">  
+            <label class="checkbox {{item.checked?'is_checked':''}}">  
+              <checkbox value="{{item.value}}" checked="{{item.checked}}" hidden="false" />{{item.name}}  
+            </label>  
+          </view>  
+        </block>  
+      </view>   
+    </checkbox-group>
+  </view>
+  <view class='interview'>
+    <view class='interview-option'><text>电话面试时间</text></view>
+    <view class='select_time'>
+      <picker mode="date" value="{{interview_date}}" name="interview_date" end="" bindchange="bindDateChange" class='birth-date'>
+        <view class='interview_on'>{{interview_date}}</view>  
+      </picker>
+    </view>
+  </view>
+  <view class='interview_time'>
+      <radio-group name="interview_time" bindchange="interviewTimeChange">
+      <view class="interview_time-selection">  
+        <block wx:for="{{interview_time}}" wx:key="idx">  
+          <view class="interview_time-item">  
+            <label class="radio {{item.checked?'is_checked':''}}">  
+              <radio value="{{item.value}}" checked="{{item.checked}}" hidden="false" />{{item.name}}  
+            </label>  
+          </view>  
+        </block>  
+      </view>
+    </radio-group>
+    </view>
+  <view class='mobile'>
+    <view class='mobile-option'><text>手机号</text></view>
+    <view class='mobile-input'><input type='text' placeholder-class="ph" type="number" maxlength="11" name="mobile" placeholder='请输入手机号' bindinput="userMobileInput" bindfocus="focus"></input></view>
+  </view>
+  <view class='code'>
+    <view class='code-option'><text>验证码</text></view>
+    <view class='code-input'><input type='text' placeholder-class="ph" type="number" maxlength="6" name="verification" placeholder='请输入验证码' bindinput ="userCodeInput"></input></view>
+    <view class='get-code'><button bindtap='getVerificationCode' disabled='{{disabled}}'>{{verification}}</button></view>
+  </view>
+  <view class='errCode' hidden="{{reply}}">{{msg}}</view>
+  <view class='submit'><button formType="submit" disabled='{{disable}}'>申请成为老师</button></view>
+</form>
+  </view>
+</view>
+</view>
+<view class='footer' style='width:100%; height:{{footer_h}};background:url(data:image/png;base64,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);background-size:100% 100%;' id='AutoTableItem'>
+</view>
